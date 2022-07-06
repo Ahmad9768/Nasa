@@ -1,0 +1,390 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  width: 1389px;
+  margin: 0 auto;
+}
+
+/*------------- header --------------*/
+#header {
+  background-image: url(images/starfield-banner.jpg);
+  text-align: right;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 5px;
+}
+
+#header a {
+  color: #fff;
+}
+/*------------- header-Top --------------*/
+#header-top-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header-top-links li {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+#header-top-links li a {
+  border-right: 3px solid rgb(85, 85, 85);
+  padding: 10px;
+  position: relative;
+}
+/* #hover-header-top:hover {
+    width:100px ;
+    height: 300px;
+    background-color: #15418c;
+    position: absolute;
+    top: 100%;
+    display: inline;
+} */
+#header-top-links li:hover {
+  background-color: #15418c;
+}
+
+#header-top-links a {
+  font-size: 20px;
+}
+
+#header-top-links li:last-of-type a {
+  border-right: none;
+}
+#header-top-links li:last-of-type {
+  margin-right: 5px;
+}
+
+#header * {
+  vertical-align: middle;
+}
+
+#header-top-links img {
+  width: 29px;
+  cursor: pointer;
+}
+
+/*------------- header-bottom --------------*/
+
+#header-bottom-links {
+  width: 70%;
+  height: fit-content;
+  margin: 0px auto;
+  padding: 8px 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header-bottom-links li {
+  background-color: #555555;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  float: left;
+  padding: 10px 0;
+}
+
+#header-bottom-links a {
+  border-right: 1px solid gray;
+  font-size: 14px;
+  padding: 3px 10px;
+}
+
+#header-bottom-links li:last-of-type a {
+  border-right: none;
+}
+#header-bottom-links li:hover {
+  background-color: gray;
+}
+
+#logo {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+
+/*    Search Box    */
+
+#search-box {
+  display: inline-block;
+  position: relative;
+}
+
+#search-box input {
+  padding: 10px;
+  width: 125px;
+  background-color: #333333;
+  border: none;
+  color: white;
+}
+
+#search-box input::placeholder {
+  font-size: 14px;
+}
+
+#search-box img {
+  position: absolute;
+  right: 0;
+  top: 12%;
+}
+
+/* ------------main------------ */
+
+#main > div {
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+}
+
+#main {
+  width: 1400px;
+  height: 1400px;
+}
+
+#asteroids {
+  width: 49%;
+  height: 48%;
+  background: url(other/crs_22_2021.jpg);
+  background-size: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+#moon-to-mars {
+  width: 24%;
+  height: 24%;
+  background: url(images/moonToMars.jpeg);
+  float: left;
+}
+
+#nasa-events {
+  width: 23.8%;
+  height: 24%;
+  background-color: rgb(153, 0, 255);
+  float: left;
+}
+
+#nasa-events a:hover {
+  text-decoration: underline;
+}
+
+#mars {
+  width: 48.5%;
+  height: 23.3%;
+  background: url(images/mars.jpg);
+  background-size: 100%;
+  float: left;
+}
+
+#humans-in-space {
+  width: 24%;
+  height: 24%;
+  background: url(images/humansInSpace.png);
+  background-size: 100%;
+  float: left;
+  clear: left;
+}
+
+#space-tech {
+  width: 48.8%;
+  height: 24%;
+  background: url(images/spaceTech.jpg);
+  background-size: 100%;
+  float: left;
+}
+
+#webb-telescope {
+  width: 24%;
+  height: 24%;
+  background: url(images/webbTelescope.png);
+  background-size: 100%;
+  float: left;
+}
+
+#image-of-the-day {
+  width: 24%;
+  height: 24%;
+  background: url(images/ImageOfTheDay.jpg);
+  background-size: 100%;
+  float: left;
+}
+
+#artemis {
+  width: 24%;
+  height: 24%;
+  background: url(images/artemis.jpg);
+  background-size: 100%;
+  float: left;
+}
+
+#artemis2 {
+  width: 24%;
+  height: 24%;
+  background: url(images/artemis2.jpg);
+  background-size: 100%;
+
+  float: left;
+}
+
+#commercial-crew {
+  width: 24%;
+  height: 24%;
+  background: url(images/Commercial\ Crew.jpg);
+  background-size: 100%;
+  float: left;
+}
+
+#nasa-events {
+  color: #fff;
+  padding: 2px 7px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #39719e;
+}
+
+/*     Nasa Events    */
+
+#nasa-events a {
+  color: #fff;
+  font-size: 14px;
+}
+#nasa-events #title {
+  margin: 0 7px;
+}
+#nasa-events #title p {
+  margin: 7px 0;
+}
+
+#nasa-events #body {
+  line-height: 16px;
+}
+
+
+#nasa-events #footer {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+#nasa-events #footer hr {
+  margin: 0;
+}
+#nasa-events #footer a {
+  margin: 0 10px;
+  text-align: center;
+}
+
+/* ------------title & description----------- */
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.description {
+  color: rgb(26, 25, 25);
+  background-color: rgba(252, 252, 252, 0.836);
+  padding: 6px 12px;
+  font-size: 17px;
+}
+
+.description:hover {
+  background-color: rgba(252, 252, 252);
+}
+
+.caption a {
+  color: #fff;
+  background-color: #5d7fb9;
+  opacity: 0.9;
+  padding: 6px 12px;
+  width: fit-content;
+  display: block;
+}
+
+/* ------------more stories--------------- */
+#more-stories {
+  text-align: center;
+  margin: 12px 3px;
+}
+
+#more-stories input {
+  background: #15418cce;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 0;
+  font-size: 17px;
+}
+
+#more-stories input:hover {
+  background: #5f759cce;
+}
+
+/* -------------footer---------- */
+#footer {
+  /* border: 1px solid white; */
+  margin: 10px 0;
+  padding: 20px 10px;
+}
+
+#nasa-info img {
+  width: 65px;
+  float: left;
+}
+
+#nasa-info p {
+  color: #fff;
+  font-size: 12px;
+}
+
+#nasa-info {
+  margin-bottom: 35px;
+  padding-left: 15px;
+}
+
+#footer-links a {
+  margin-right: 30px;
+  color: #5d7fb9;
+  font-weight: bold;
+}
+
+#footer-links a:hover {
+  text-decoration: underline;
+}
+
+#footer-links a:last-of-type {
+  margin-right: 0;
+}
+
+#footer-links {
+  float: right;
+}
